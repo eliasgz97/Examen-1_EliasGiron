@@ -150,7 +150,7 @@ int columna_movimiento (char columna){
         return columnas;
 }
 bool piezas_blancas(char** matriz, int fila, int columna){
-	if(matriz[fila][columna] != 'B'){
+	if(matriz[fila][columna] != 'B' || matriz[fila][columna] != 'W'){
 		cout << "MOVIMIENTO INVALIDO, INTENTE DE NUEVO"<<endl;
 		return false;
 	} else {
